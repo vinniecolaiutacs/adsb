@@ -2,9 +2,13 @@
   "name": "adsb-481",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js",
+    "build": "npm run build-backend && npm run build-frontend",
+    "build-backend": "webpack --mode=production",
+    "build-frontend": "cd front-end && npm install && ng build --prod"
   },
   "keywords": [],
   "author": "",

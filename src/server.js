@@ -11,7 +11,7 @@ app.get('/api/data', async (req, res) => {
   try {
     const apiResponse = await axios.get('https://api.adsb.one/v2/type/A321');
     const data = apiResponse.data;
-    res.set('Access-Control-Allow-Origin', 'https://vinniecolaiutacs.github.io/ng-deploy/');
+    res.set('Access-Control-Allow-Origin', 'https://vinniecolaiutacs.github.io');
     res.json(data);
   } catch (error) {
     console.error(error);

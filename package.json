@@ -6,8 +6,9 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node app.js",
-    "build": "npm run build-frontend",
-    "build-frontend": "cd front-end && npm install && ng build --prod"
+    "build": "npm run build-backend && npm run build-frontend",
+    "build-frontend": "cd front-end && npm install -g @angular/cli && npm install && ng build",
+    "build-backend": "npm install"
   },
   "keywords": [],
   "author": "",

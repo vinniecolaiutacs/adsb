@@ -20,7 +20,6 @@ app.get('/api/data', async (req, res) => {
   }
 });
 
-app.use(express.static(path.join(__dirname, '../front-end/dist/front-end')));
 
 
 

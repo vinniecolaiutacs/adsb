@@ -8,7 +8,7 @@
     "prod" :"ng build --prod=true",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "github-build": "ng build --output-path docs --base-href /ng-deploy/"
+    "github-build": "ng build --output-path ../docs --base-href /adsb/"
   },
   "private": true,
   "dependencies": {

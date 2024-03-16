@@ -15,7 +15,7 @@ export class MapComponent implements AfterViewInit, OnDestroy {
   private markersLayer: L.LayerGroup = L.layerGroup([]);
   private dataSubscription: Subscription | undefined;
   private planeIcon = L.icon({
-    iconUrl: '/adsb/assets/planeIcon2.png',
+    iconUrl: '/assets/planeIcon2.png',
 
     iconSize:     [33, 33], // size of the icon
     shadowSize:   [34, 47], // size of the shadow
